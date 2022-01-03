@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+<title>Untitled Document</title>
+  <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+   <![endif]-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+</head>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+
+
+
+<script>
+  $(function(){
+    $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true,
+        autoplay : true,
+        autoplaySpeed : 4000,
+        pauseOnHover : true,
+      });
+
+      $('.center').slick({
+  centerMode: true,
+  slidesToShow: 3,
+  autoplay : true,
+      
+})
+
+$(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        autoplay : true,
+        autoplaySpeed : 3000,
+        pauseOnHover : false
+      });
+
+      
+      $(window).scroll(function(){ 
+        if ($(document).scrollTop() >= 300 && $(document).scrollTop() <= 4500){  
+          $('.quick_1').fadeIn(); 
+        }
+     
+        else {
+          $('.quick_1').fadeOut();
+        } 
+      })
+
+      $('.quick_1').click(function(){
+		event.preventDefault();
+
+		$("html,body").stop().animate({scrollTop:0});
+		});
+
+
+    status = 1;
+    $('.season1').hover(function(){
+      if (status==1){
+        $('.flower').css({transform:'rotate(360deg)'});
+
+        status = 2;
+      } else{
+        $('.flower').css({transform:'rotate(0deg)'});
+        status = 1;
+      }
+     
+          })
+
+          status = 1;
+    $('.season2').hover(function(){
+      if (status==1){
+        $('.sun').css({transform:'rotate(360deg)'});
+
+        status = 2;
+      } else{
+        $('.sun').css({transform:'rotate(0deg)'});
+        status = 1;
+      }
+     
+          })
+
+          status = 1;
+    $('.season3').hover(function(){
+      if (status==1){
+        $('.leaf').css({transform:'rotate(720deg)'});
+
+        status = 2;
+      } else{
+        $('.leaf').css({transform:'rotate(0deg)'});
+        status = 1;
+      }
+     
+          })
+
+
+          status = 1;
+    $('.season4').hover(function(){
+      if (status==1){
+        $('.snow').css({transform:'rotate(720deg)'});
+
+        status = 2;
+      } else{
+        $('.snow').css({transform:'rotate(0deg)'});
+        status = 1;
+      }
+     
+          })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  })
+</script>
+
+<body >
+<div id="wrap">
+  <header id="header">
+    <div class="left"> 
+    <h1 class="logo">
+      <a href="#"><img src="images/logo_text.png" alt="작은로고"></a>
+    </h1>
+      <nav id="nav">
+        <ul class="depth1">
+          <li><a href="#">조직위원회</a>
+          <ul>
+            <li><a href="#">인사말</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">조직체계</a></li>
+          </ul>
+          </li>
+          
+          
+          <li><a href="#">계절별축제</a>
+          <ul>
+            <li><a href="#">봄</a></li>
+            <li><a href="#">여름</a></li>
+            <li><a href="#">가을</a></li>
+            <li><a href="#">겨울</a></li>
+          </ul>
+          </li>
+          
+          
+          <li><a href="#">커뮤니티</a>
+          <ul>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">시민참여프로그램</a></li>
+          </ul>
+          </li>
+          
+          
+          <li><a href="#">알림소식</a>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주묻는질문</a></li>
+          </ul>
+          </li>
+          
+          
+          <li><a href="#">에매서비스</a>
+          <ul>
+            <li><a href="#">예매서비스</a></li>
+          </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+    <div class="top">
+     <p><a href="#"><img src="images/home-2.png" alt="home"></a></p>
+     <p><a href="#"><img src="images/language.png" alt="english"></a></p>
+     <p><a href="#"><img src="images/menu.png" alt="menu"></a></p>
+    </div>
+  </header>
+  
+  <section id="section1">
+    
+
+    <div id="slide">
+     
+     
+     <section class="lazy slider" data-sizes="50vw">
+      <div>
+        <img src="images/slide1.jpg" alt="슬라이드" data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="100vw">
+      </div>
+      <div>
+        <img src="images/slide1.jpg" alt="슬라이드" data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="100vw">
+      </div>
+     </section>
+    
+    </div>
+
+  <div class="inner">
+   <ul class="service">
+     <li class="service1">
+       <img src="images/ticket.png" alt="티켓">
+       <div class="text1"> 
+       <h3>예매서비스</h3>
+       <p>쉽고 빠르게 예매하세요</p>
+       <p class="black"><a href="#">보러가기 ▶</a></p>
+      </div>
+     </li>
+
+     <li class="service1">
+      <img src="images/percent.png" alt="할인">
+      <div class="text1"> 
+      <h3>할인받기</h3>
+      <p>다양한 할인혜택을 받아보세요.</p>
+      <p class="black"><a href="#">보러가기 ▶</a></p>
+     </div>
+    </li>
+
+    <li class="service1">
+      <img src="images/qna.png" alt="문의사항">
+      <div class="text1"> 
+      <h3>문의사항</h3>
+      <p>무엇이든 물어보세요.</p>
+      <p class="black"><a href="#">보러가기 ▶</a></p>
+     </div>
+    </li>
+   
+   
+   
+    </ul>
+  
+  </div>
+
+
+  
+  
+  </section>
+  
+  
+  
+  
+  
+  <section id="section2">
+    <div class="inner">
+    
+    <div class="left_text">
+    <p><img src="images/small_logo.png" alt="로고"></p>
+    <div class="gito">
+    <h2><span class="bold">계절별</span> 축제</h2>
+    <h4>부산에서 펼쳐지는<br>
+      다양한 축제들을<br>
+      만나보세요!</h4>
+    </div>
+      
+  </div>
+
+  <article class="right_pic">
+    <div class="pic_box1">
+      <div class="season1"><a href="#"><img src="images/spring3.jpg" alt="봄"></a></div>
+      <p><a href="#">봄</a></p>
+      <p class="flower"><img src="images/flower3.png" alt="꽃"></p>
+    </div>
+
+    <div class="pic_box2">
+      <div class="season2"><a href="#"><img src="images/summer2.jpg" alt="여름"></a></div>
+      <p><a href="#">여름</a></p>
+      <p class="sun"><img src="images/sun.png" alt="태양"></p>
+      
+    </div>
+
+    <div class="pic_box3">
+     <div class="season3"><a href="#"><img src="images/autumn2.jpg" alt="가을"></a></div>
+     <p><a href="#">가을</a></p>
+     <p class="leaf"><img src="images/leaf.png" alt="낙엽"></p>
+     
+    </div>
+
+    <div class="pic_box4">
+    <div class="season4"><a href="#"><img src="images/winter2.jpg" alt="겨울"></a></div>
+    <p><a href="#">겨울</a></p>
+    <p class="snow"><img src="images/snowman.png" alt="눈사람"></p>
+     
+    </div>
+
+    
+    
+
+  </article>
+ 
+
+
+
+</div>
+  </section>
+  
+  
+  
+  <section id="section3">
+    
+    <div class="inner">
+    <div class="left_text">
+      <div class="left_text">
+        <p><img src="images/small_logo.png" alt="로고"></p>
+        <h2><span class="bold"></span>갤러리</h2>
+        <h4>축제의 즐거움을 사진으로 만나보세요!</h4>
+          
+      </div>
+    </div>
+
+    <div class="gallery">
+
+      <section class="box1">
+        <div class="center slider">
+          <div><a href="#"><img src="images/gallery4.jpg" alt="유채꽃축제"></a></div>
+          <div><a href="#"><img src="images/gallery1.jpg" alt="부산항 축제"></a></div>
+          <div><a href="#"><img src="images/gallery2.jpg" alt="부산바다축제"></a></div>
+          <div><a href="#"><img src="images/gallery3.jpg" alt="부산불꼴축제"></a></div>
+         </div>
+        </section>
+      
+     
+    </div>
+    <p class="more"><a href="#">+</a></p>
+  </div>
+    
+    
+  </section>
+  
+  
+  
+  
+  <section id="section4">
+    <div class="inner">
+    
+      <div class="left_text">
+        <p><img src="images/small_logo.png" alt="로고"></p>
+        <h2><span class="bold">알림</span> 소식</h2>
+        <h4>축제의 모든 소식을 한 눈에!</h4>
+          
+      </div>
+
+   </div>
+
+   
+     <p class="wave"><img src="images/wave2.png" alt="물결"></p>
+     <div class="inner">
+     <div class="contents">
+    
+     <div class="text_box1">
+      <h3><a href="#">공지사항</a></h3>
+      
+      <div class="middle_box1">
+      
+      <h6>『제25회 부산바다축제』</h6>
+ 
+       <p>연계 호텔 안내<br>
+       <가을바다 부산방캉스!>...</p>
+       <button>더 보기 ></button>
+      </div>
+      
+      </div>
+
+
+      <div class="text_box2">
+        <h3><a href="#">공시/공고</a></h3>
+        
+        <div class="middle_box2">
+        
+        <h6>『2021년 결산서류 공시』</h6>
+   
+         <p>법인세법 시행령<br>
+          제39조제5항에 따라...</p>
+         <button>더 보기 ></button>
+        </div>
+        
+        </div>
+
+        <div class="text_box3">
+          <h3><a href="#">자주묻는질문</a></h3>
+          
+          <div class="middle_box3">
+          
+          <h6>『예매서비스는 어떻게..』</h6>
+     
+           <p>예매서비스 안내<br>
+           A. 예매서비스는 홈페이지...</p>
+           <button>더 보기 ></button>
+          </div>
+          
+          </div>
+        </div>
+   
+   
+   
+    </div>
+    
+  </section>
+  
+  
+  <section id="section5">
+
+    <div class="inner">
+    
+      <div class="left_text">
+      <p><img src="images/small_logo.png" alt="로고"></p>
+      <h2><span class="bold">시민참여</span> 프로그램</h2>
+      <h4>부산시민이라면 누구나!</h4>
+        
+    </div>
+    
+
+   </div>
+
+
+
+  <article class="article">
+    <div>
+      <img src="images/BLUE.jpg" alt="시민참여프로그램">
+    </div>
+      <p class="more"><a href="#">자세히 보기</a></p>
+
+    <div class="banner1">
+
+      
+      
+      
+      <section class="vertical-center slider">
+        <div>
+          <a href="#"><img src="images/banner1.jpg" alt="sns이벤트"></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/open_class2.jpg" alt="sns이벤트"></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/open_class2.jpg" alt="sns이벤트"></a>
+        </div>
+        
+      </section>
+
+
+
+      
+     
+
+     
+    </div>
+    
+    
+  
+</article>
+  
+
+  </section>
+  
+  
+  
+  
+  <footer id="footer">
+    <div class="inner">
+    
+    <div class="foot_left">
+      
+      <p class="small_logo"><a href="#"><img src="images/small_logo.png" alt="부산문화관광축제"></a></p>
+      <p class="foot_logo"><a href="#">부산문화관광축제</a></p>
+    </div>
+
+    <div class="foot_middle">
+      <p>
+        (사)부산문화관광축제조직위원회<br>
+
+47500 부산광역시 연제구 월드컵대로 344(거제동 1299) 아시아드주경기장<br>
+
+대표전화 : 051-501-6051<br>
+
+개인정보처리방침 | 이메일무단수집거부
+      </p>
+
+    </div>
+
+    <div class="sns_logo">
+      <p><a href="#"><img src="images/insta.png" alt="인스타그램"></a></p>
+      <p><a href="#"><img src="images/twe.png" alt="페이스북"></a></p>
+      <p><a href="#"><img src="images/sns.png" alt="카카오"></a></p>
+   
+    </div>
+
+    
+      
+    </div>
+  </footer>
+  <div id="quick_1" class="quick_1">
+    <a href="#"><img src="images/quick_2.png" alt="퀵메뉴"></a>
+  </div>
+
+</div>
+
+</body>
+</html>
