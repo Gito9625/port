@@ -95,7 +95,7 @@ position: absolute; left: 410px;top: 1140px;}
     
     
 }
-/* 상자가 오른쪽으로 늘어남 width 사용*/
+/* 상자가 오른쪽으로 늘어남 width 사용 foward 멈춤*/
 #result div {
     
     height: 10px;
@@ -205,7 +205,7 @@ h4{padding-left: 94px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 .col-md-4{/*바깥그림자*/}
 .picture1 a{display: block;overflow: hidden;position: relative;}
 .picture1 a:before{content:'';display: block;position:absolute;width:100%;height: 100%;top:0;left:0;z-index: 99;transition: 0.5s;}
-.picture1 a:hover:before{box-shadow: 0 0 100px rgba(0, 0, 0, 1) inset;}
+.picture1 a:hover:before{box-shadow: 0 0 100px rgba(0, 0, 0, 70%) inset;}
 .picture1 .card a:hover:before{box-shadow: 0 0 20px rgba(255, 255, 255, 1) inset;}
 .picture1 a img{transition: 0.5s;}
 .picture1 a:hover img{transform:scale(1.2)}
@@ -214,14 +214,14 @@ h4{padding-left: 94px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 .picture1 .poster{position: absolute;left: 170px;top: 250px;}
 .picture1 .parody{position: absolute;right: 60px; top: 350px;}
 .picture1 .logo{position: absolute;top: 250px;left: -250px;}
-.fh5co-text{position: absolute;top:26%;left:24%;transform:scale(0);transition: 0.5s;color:#fff;font-weight: 700;font-size: 4rem;}
+.fh5co-text{position: absolute;top:26%;left:24%;transform:scale(0);transition: 0.5s;color:#fff;font-weight: 700;font-size: 4rem;font-weight: 500;text-shadow: 0 0 5px rgba(0, 0, 0, 1);}
 .picture1 a:hover .fh5co-text{transform:scale(1)}
 
 .card .fh5co-text {font-size: 3rem;position: absolute;left:15%;top: 36%;}
 
 .picture1 .banner .fh5co-text{font-size: 4rem;position: absolute;left: 36%;top: 32%;}
-.picture1 .poster .fh5co-text{font-size: 4rem;position: absolute;left: 15%;top: 34%;color: #5c5c5c;}
-.picture1 .parody .fh5co-text{font-size: 3rem;position: absolute;left: 26%;top: 30%;color: #5c5c5c;}
+.picture1 .poster .fh5co-text{font-size: 4rem;position: absolute;left: 15%;top: 34%;color: #fff;}
+.picture1 .parody .fh5co-text{font-size: 3rem;position: absolute;left: 26%;top: 30%;color: #fff;}
 
 
 
@@ -240,7 +240,7 @@ h4{padding-left: 94px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 
 .picture2 a{display: block;overflow: hidden;position: relative;}
 .picture2 a:before{content:'';display: block;position:absolute;width:100%;height: 100%;top:0;left:0;z-index: 99;transition: 0.5s;}
-.picture2 a:hover:before{box-shadow: 0 0 100px rgba(0, 0, 0, 1) inset;}
+.picture2 a:hover:before{box-shadow: 0 0 20px rgba(0, 0, 0, 1) inset;}
 .picture2 a img{transition: 0.5s;}
 .picture2 a:hover img{transform:scale(1.2)}
 
@@ -259,7 +259,7 @@ h4{padding-left: 94px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 .picture2 .home .fh5co-text{position: absolute;top: 22%;left: 26%;font-size: 3rem;text-align: center;}
 .picture2 .banner .fh5co-text{position: absolute;left: 36%;top: 30%;}
 .picture2 .detail .fh5co-text{position: absolute;text-align: center;left: 14%;top: 34%;}
-.picture2 .logo .fh5co-text{position: absolute;font-size: 2.5rem;color: #5c5c5c;text-align: center;top: 6%;left: 34%;}
+.picture2 .logo .fh5co-text{position: absolute;font-size: 2.5rem;color: #ffffff;text-align: center;top: 18%;left: 34%;line-height: 2.5rem;}
 
 
 
@@ -281,7 +281,7 @@ h4{padding-left: 94px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 
 .picture3 a{display: block;overflow: hidden;position: relative;}
 .picture3 a:before{content:'';display: block;position:absolute;width:100%;height: 100%;top:0;left:0;z-index: 99;transition: 0.5s;}
-.picture3 a:hover:before{box-shadow: 0 0 100px rgba(0, 0, 0, 1) inset;}
+.picture3 a:hover:before{box-shadow: 0 0 20px rgba(0, 0, 0, 1) inset;}
 .picture3 a img{transition: 0.5s;}
 .picture3 a:hover img{transform:scale(1.2)}
 
@@ -289,13 +289,14 @@ h4{padding-left: 94px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 
 
 .picture3 .logo{position: absolute; top: 280px;left: -50px;}
-.picture3 .home{position: absolute;left: 100px;top: -50px;}
+.picture3 .home{position: absolute;left: 170px;top: -50px;}
+.picture3 .home img{border: 1px solid #ccc;}
 .picture3 .banner{position: absolute;left: 400px; top: 260px;}
 
-.picture3 .home .fh5co-text{position: absolute;top: 22%;left: 26%;font-size: 3rem;text-align: center;color: #999999;}
-.picture3 .logo .fh5co-text{position: absolute;color: #5c5c5c;font-size: 2.5rem;
-text-align: center;left: 28%;top: 14%;}
-.picture3 .banner .fh5co-text{position: absolute;color: #5c5c5c;font-size: 4rem;
+.picture3 .home .fh5co-text{position: absolute;top: 22%;left: 26%;font-size: 3rem;text-align: center;color: #fff;}
+.picture3 .logo .fh5co-text{position: absolute;color: #fff;font-size: 2.5rem;
+text-align: center;left: 28%;top: 24%;line-height: 2.5rem;}
+.picture3 .banner .fh5co-text{position: absolute;color: #fff;font-size: 4rem;
   text-align: center;left: 36%;top: 32%;}
 
 
