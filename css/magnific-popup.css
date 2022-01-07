@@ -148,8 +148,11 @@ button::-moz-focus-inner {
   color: white;
   right: -6px;
   text-align: right;
-  padding-right: 6px;
-  width: 100%; }
+  padding-right: 380px;
+  width: 100%;
+  font-size: 70px;
+  padding-top: 44px;
+position: fixed;}
 
 .mfp-counter {
   position: absolute;
@@ -196,7 +199,7 @@ button::-moz-focus-inner {
     opacity: 0.7; }
 
 .mfp-arrow-left {
-  left: 0; }
+  left: 200px;position: fixed;}
   .mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
     border-right: 17px solid white;
     margin-left: 31px; }
@@ -205,7 +208,7 @@ button::-moz-focus-inner {
     border-right: 27px solid #3f3f3f; }
 
 .mfp-arrow-right {
-  right: 0; }
+  right:200px;position: fixed;}
   .mfp-arrow-right:after, .mfp-arrow-right .mfp-a {
     border-left: 17px solid white;
     margin-left: 39px; }
