@@ -30,7 +30,7 @@
 }
 
 @keyframes bounce1{
-  from{bottom: 0px; box-shadow: 0 0 20px  rgba(0, 0, 0,1);}
+  from{bottom: 0px; box-shadow: 0 0 8px  rgba(0, 0, 0,1);}
   to{bottom: 50px; box-shadow: 0 50px 50px  rgba(0, 0, 0, 0) ;}
 }
 ::selection{background: green;color: #fff;}
@@ -270,6 +270,7 @@ h4{padding-left: 60px;padding-top: 100px;font-size: 40px;font-weight: 400;color:
 .picture2 .banner{transform: translate(-250px, -300px);}
 .picture2 .home{transform: translate(140px, -20px);}
 .picture2 .detail{transform: translate(330px, -20px);}
+
 .picture2 .logo{transform: translate(-200px, -450px);}
 
 
